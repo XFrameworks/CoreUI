@@ -15,14 +15,13 @@
 		272910882DAE9E0700F00395 /* Exceptions for "CoreUI" folder in "CoreUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
-				CoreUI.h,
-				CUIColorName.h,
-				CUIColorScheme.h,
-				CUIColorSchemeContrast.h,
-				CUIDesignColor.h,
-				CUIDesignLibrary.h,
-				CUIDesignStyling.h,
-				CUIDisplayGamut.h,
+				include/CUIColorName.h,
+				include/CUIColorScheme.h,
+				include/CUIColorSchemeContrast.h,
+				include/CUIDesignColor.h,
+				include/CUIDesignLibrary.h,
+				include/CUIDesignStyling.h,
+				include/CUIDisplayGamut.h,
 			);
 			target = 272910822DAE9E0700F00395 /* CoreUI */;
 		};
