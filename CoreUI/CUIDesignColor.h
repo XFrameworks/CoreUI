@@ -19,10 +19,6 @@
 @property (readonly, nonatomic) CGBlendMode blendMode;
 @property (readonly, nonatomic) CUIDisplayGamut displayGamut;
 
-- (void)dealloc;
-- (CGColorRef)cgColor;
-- (CUIDisplayGamut)displayGamut;
-- (CGBlendMode)blendMode;
 - (instancetype)initWithColor:(CGColorRef)color blendMode:(CGBlendMode)blendMode displayGamut:(CUIDisplayGamut)displayGamut;
 
 @end

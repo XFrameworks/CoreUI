@@ -3,15 +3,25 @@
 //  CoreUI
 //
 //  Audited for macOS 15.0
-//  Status: TODO
+//  Status: Complete
 
 #import "CUIDesignColor.h"
 
-@interface CUIDesignColor ()
-
-@end
-
 @implementation CUIDesignColor
-// TOOO
+
+- (instancetype)initWithColor:(CGColorRef)color
+                    blendMode:(CGBlendMode)blendMode
+                 displayGamut:(CUIDisplayGamut)displayGamut {
+    if (color == nil) {
+        return nil;
+    }
+    self = [super init];
+    if (self) {
+        _cgColor = CGColorRetain(color);
+        _blendMode = blendMode;
+        _displayGamut = displayGamut;
+    }
+    return self;
+}
 
 @end
