@@ -8,9 +8,10 @@
 #ifndef CUIDisplayGamut_h
 #define CUIDisplayGamut_h
 
+#import <CoreUI/CUIBase.h>
 #import <CoreFoundation/CoreFoundation.h>
 
-typedef CF_CLOSED_ENUM(uint64_t, CUIDisplayGamut) {
+typedef CUI_CLOSED_ENUM(NSUInteger, CUIDisplayGamut) {
     CUIDisplayGamutSRGB = 0,
     CUIDisplayGamutP3 = 1,
 };

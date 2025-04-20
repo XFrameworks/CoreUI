@@ -6,10 +6,21 @@
 //  Status: Complete
 
 #import <Foundation/Foundation.h>
+#import <os/log.h>
+#import <CoreUI/CUIBase.h>
 
-NS_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT
-void _CUILog(int verbose, const char * _Nonnull message, ...) __printflike(2, 3);
+typedef CUI_ENUM(int32_t, CUILogLevel) {
+    CUILogLevelDefault = 1,
+    CUILogLevelInfo = 2,
+    CUILogLevelDebug = 3,
+    CUILogLevelError = 4
+};
 
-NS_ASSUME_NONNULL_END
+CUI_EXPORT
+void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) CUI_FORMAT_FUNCTION(2, 3);
+
+os_log_t _CUILogHandle(void);
+
+CUI_ASSUME_NONNULL_END

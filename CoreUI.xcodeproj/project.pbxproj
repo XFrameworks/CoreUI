@@ -16,6 +16,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				include/CoreUI.h,
+				include/CUIBase.h,
 				include/CUIColorName.h,
 				include/CUIColorScheme.h,
 				include/CUIColorSchemeContrast.h,
@@ -23,6 +24,13 @@
 				include/CUIDesignLibrary.h,
 				include/CUIDesignStyling.h,
 				include/CUIDisplayGamut.h,
+				include/CUINamedColor.h,
+				include/CUINamedLookup.h,
+				include/CUIRenditionKey.h,
+				include/CUIStructuredThemeStore.h,
+				include/CUISwiftSupport.h,
+				include/CUITargetConditionals.h,
+				include/CUIThemeRendition.h,
 			);
 			target = 272910822DAE9E0700F00395 /* CoreUI */;
 		};
