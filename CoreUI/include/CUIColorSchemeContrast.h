@@ -10,7 +10,7 @@
 
 #import <CoreFoundation/CoreFoundation.h>
 
-typedef CF_CLOSED_ENUM(uint64_t, CUIColorSchemeContrast) {
+typedef CF_CLOSED_ENUM(NSUInteger, CUIColorSchemeContrast) {
     CUIColorSchemeContrastStandard,
     CUIColorSchemeContrastIncreased,
 };

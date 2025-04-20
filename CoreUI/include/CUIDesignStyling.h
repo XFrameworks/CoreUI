@@ -10,7 +10,7 @@
 
 #import <CoreFoundation/CoreFoundation.h>
 
-typedef CF_CLOSED_ENUM(uint64_t, CUIDesignStyling) {
+typedef CF_CLOSED_ENUM(NSUInteger, CUIDesignStyling) {
     CUIDesignStyling_0 = 0,
     CUIDesignStyling_1 = 1,
     CUIDesignStyling_2 = 2,

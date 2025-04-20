@@ -1,6 +1,9 @@
 //
 //  CUIDesignLibrary.h
 //  CoreUI
+//
+//  Audited for macOS 15.0
+//  Status: WIP
 
 #ifndef CUIDesignLibrary_h
 #define CUIDesignLibrary_h
@@ -19,8 +22,8 @@ CF_ASSUME_NONNULL_BEGIN
 
 typedef struct CUIDesignColorTraits {
     CUIColorName name;
-    uint64_t designSystem;
-    uint64_t palette;
+    NSUInteger designSystem;
+    NSUInteger palette;
     CUIColorScheme colorScheme;
     CUIColorSchemeContrast contrast;
     CUIDesignStyling styling;

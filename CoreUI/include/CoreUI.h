@@ -7,13 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+CF_ASSUME_NONNULL_BEGIN
 
 @interface CoreUI : NSObject
 
-+(void)_determineCompatibilityMode;
-+(int64_t)coreUICompatibleMode;
++ (void)_determineCompatibilityMode;
++ (NSInteger)coreUICompatibleMode;
 
 @end
 
-NS_ASSUME_NONNULL_END
+CF_ASSUME_NONNULL_END

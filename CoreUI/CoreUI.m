@@ -21,7 +21,7 @@ extern double CoreUIVersionNumber;
  */
 extern BOOL _CFExecutableLinkedOnOrAfter(int version);
 
-int64_t CoreUICompatibleMode = 0;
+NSInteger CoreUICompatibleMode = 0;
 
 @implementation CoreUI
 
@@ -35,7 +35,7 @@ int64_t CoreUICompatibleMode = 0;
     int32_t mode1 = shiftVersion > 0x238 ? 9999 : 100;
     int32_t mode2 = majorVersion == 0xFFFF ? 9999 : 100;
 
-    int64_t compatibleMode = (majorVersion != 0xFFFF && shiftVersion > 4) ? mode1 : mode2;
+    NSInteger compatibleMode = (majorVersion != 0xFFFF && shiftVersion > 4) ? mode1 : mode2;
     #else
     const char *library = "UIKit";
     int32_t version = NSVersionOfLinkTimeLibrary(library);
@@ -48,14 +48,14 @@ int64_t CoreUICompatibleMode = 0;
     int32_t mode2 = shiftVersion > 0x250 ? 9999 : 100;
 
     int32_t newBuildMode = (version >= 0xA0000 || majorVersion == 0xFFFF) ? mode1 : mode2;
-    int64_t compatibleMode = isNewBuild ? newBuildMode : 100;
+    NSInteger compatibleMode = isNewBuild ? newBuildMode : 100;
     #endif
 
     CoreUICompatibleMode = compatibleMode;
-    _CUILog(3, "CoreUI(DEBUG): Current version = %.1f, Linked %s version = %u, Compatibility mode = %ld", CoreUIVersionNumber, library, majorVersion, (long)compatibleMode);
+    _CUILog(CUILogLevelDebug, "CoreUI(DEBUG): Current version = %.1f, Linked %s version = %u, Compatibility mode = %ld", CoreUIVersionNumber, library, majorVersion, (long)compatibleMode);
 }
 
-+(int64_t)coreUICompatibleMode {
++(NSInteger)coreUICompatibleMode {
     return CoreUICompatibleMode;
 }
 

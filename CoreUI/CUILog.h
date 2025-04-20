@@ -6,10 +6,20 @@
 //  Status: Complete
 
 #import <Foundation/Foundation.h>
+#import <os/log.h>
 
-NS_ASSUME_NONNULL_BEGIN
+CF_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(int32_t, CUILogLevel) {
+    CUILogLevelDefault = 1,
+    CUILogLevelInfo = 2,
+    CUILogLevelDebug = 3,
+    CUILogLevelError = 4
+};
 
 FOUNDATION_EXPORT
-void _CUILog(int verbose, const char * _Nonnull message, ...) __printflike(2, 3);
+void _CUILog(CUILogLevel level, const char * _Nonnull message, ...);
 
-NS_ASSUME_NONNULL_END
+os_log_t _CUILogHandle(void);
+
+CF_ASSUME_NONNULL_END
