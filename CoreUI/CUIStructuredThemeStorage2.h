@@ -9,7 +9,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "_renditionkey.h"
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @protocol CUIStructuredThemeStorage2 <NSObject>
 - (id)localizations;
@@ -35,4 +35,4 @@ CF_ASSUME_NONNULL_BEGIN
 - (id)themeStore;
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

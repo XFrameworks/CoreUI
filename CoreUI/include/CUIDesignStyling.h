@@ -8,9 +8,10 @@
 #ifndef CUIDesignStyling_h
 #define CUIDesignStyling_h
 
+#import <CoreUI/CUIBase.h>
 #import <CoreFoundation/CoreFoundation.h>
 
-typedef CF_CLOSED_ENUM(NSUInteger, CUIDesignStyling) {
+typedef CUI_CLOSED_ENUM(NSUInteger, CUIDesignStyling) {
     CUIDesignStyling_0 = 0,
     CUIDesignStyling_1 = 1,
     CUIDesignStyling_2 = 2,

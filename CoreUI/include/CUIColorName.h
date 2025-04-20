@@ -8,10 +8,11 @@
 #ifndef CUIColorName_h
 #define CUIColorName_h
 
+#import <CoreUI/CUIBase.h>
 #import <CoreFoundation/CoreFoundation.h>
 
 // TODO: 29 cases
-typedef CF_CLOSED_ENUM(NSUInteger, CUIColorName) {
+typedef CUI_CLOSED_ENUM(NSUInteger, CUIColorName) {
     CUIColorNameRed = 0,
     CUIColorNameOrange = 1,
     CUIColorNameYellow = 2,

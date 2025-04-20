@@ -8,7 +8,7 @@
 #import <CoreUI/CUIThemeRendition.h>
 #import <CoreUI/_renditionkey.h>
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 typedef struct {
     uint8_t isVectorBased : 1;
@@ -98,4 +98,4 @@ typedef struct {
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

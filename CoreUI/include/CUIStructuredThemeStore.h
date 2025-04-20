@@ -7,8 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <CoreUI/CUIBase.h>
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @interface CUIStructuredThemeStore : NSObject
 
@@ -38,4 +39,4 @@ CF_ASSUME_NONNULL_BEGIN
 @end
 
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

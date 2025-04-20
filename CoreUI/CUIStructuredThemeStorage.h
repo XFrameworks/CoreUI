@@ -23,7 +23,7 @@ typedef struct {
     _rgbquad var2;
 } _colordef;
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @protocol CUIStructuredThemeStorage <NSObject>
 
@@ -46,4 +46,4 @@ CF_ASSUME_NONNULL_BEGIN
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

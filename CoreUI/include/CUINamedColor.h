@@ -5,10 +5,11 @@
 //  Audited for macOS 15.0
 //  Status: Complete
 
+#import <CoreUI/CUIBase.h>
 #import <CoreUI/CUINamedLookup.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @interface CUINamedColor : CUINamedLookup
 
@@ -18,4 +19,4 @@ CF_ASSUME_NONNULL_BEGIN
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

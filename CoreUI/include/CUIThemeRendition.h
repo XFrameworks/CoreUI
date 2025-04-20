@@ -7,16 +7,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <CoreUI/CUIBase.h>
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
-typedef CF_ENUM(FourCharCode, CUIPixelFormat) {
+typedef CUI_ENUM(FourCharCode, CUIPixelFormat) {
     CUIPixelFormatPDF  = 'PDF ',
     CUIPixelFormatHEIF = 'HEIF',
     CUIPixelFormatJPEG = 'JPEG',
 };
 
-typedef CF_ENUM(NSInteger, CUIRenditionType) {
+typedef CUI_ENUM(NSInteger, CUIRenditionType) {
     CUIRenditionTypeGradient = 6,
 };
 
@@ -101,4 +102,4 @@ typedef CF_ENUM(NSInteger, CUIRenditionType) {
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

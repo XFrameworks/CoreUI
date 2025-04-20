@@ -9,8 +9,9 @@
 #define CUIColorScheme_h
 
 #import <CoreFoundation/CoreFoundation.h>
+#import <CoreUI/CUIBase.h>
 
-typedef CF_CLOSED_ENUM(NSUInteger, CUIColorScheme) {
+typedef CUI_CLOSED_ENUM(NSUInteger, CUIColorScheme) {
     CUIColorSchemeLight,
     CUIColorSchemeDark,
 };

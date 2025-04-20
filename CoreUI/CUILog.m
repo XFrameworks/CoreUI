@@ -9,6 +9,8 @@
 
 int32_t __logToStderr = 0;
 
+static const char *lastErrorString = NULL;
+
 void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) {
     static BOOL _showDebugLogs = NO;
     static dispatch_once_t _onceDefaultToken;
@@ -31,7 +33,7 @@ void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) {
                     break;
                 case CUILogLevelError:
                     fprintf(stderr, "%s\n", [result UTF8String]);
-                    
+                    lastErrorString = [result UTF8String];
                 default:
                     break;
             }
@@ -49,6 +51,8 @@ void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) {
                     break;
                 case CUILogLevelError:
                     os_log_error(_CUILogHandle(), "%{public}@", result);
+                    os_log_fault(_CUILogHandle(), "%{public}@", result);
+                    lastErrorString = [result UTF8String];
                     break;
                 default:
                     break;

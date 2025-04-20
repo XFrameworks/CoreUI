@@ -8,7 +8,7 @@
 #import "CUIRenditionKey.h"
 #import "_renditionkey.h"
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @interface CUIRenditionKey ()
 
@@ -23,4 +23,4 @@ CF_ASSUME_NONNULL_BEGIN
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

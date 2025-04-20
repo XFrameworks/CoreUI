@@ -7,8 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreUI/CUIRenditionKey.h>
+#import <CoreUI/CUIBase.h>
 
-CF_ASSUME_NONNULL_BEGIN
+CUI_ASSUME_NONNULL_BEGIN
 
 @interface CUINamedLookup : NSObject <NSLocking>
 
@@ -38,4 +39,4 @@ CF_ASSUME_NONNULL_BEGIN
 
 @end
 
-CF_ASSUME_NONNULL_END
+CUI_ASSUME_NONNULL_END

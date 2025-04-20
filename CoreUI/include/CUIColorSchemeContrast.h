@@ -9,8 +9,9 @@
 #define CUIColorSchemeContrast_h
 
 #import <CoreFoundation/CoreFoundation.h>
+#import <CoreUI/CUIBase.h>
 
-typedef CF_CLOSED_ENUM(NSUInteger, CUIColorSchemeContrast) {
+typedef CUI_CLOSED_ENUM(NSUInteger, CUIColorSchemeContrast) {
     CUIColorSchemeContrastStandard,
     CUIColorSchemeContrastIncreased,
 };
