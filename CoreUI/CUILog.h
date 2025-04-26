@@ -18,9 +18,10 @@ typedef CUI_ENUM(int32_t, CUILogLevel) {
     CUILogLevelError = 4
 };
 
-CUI_EXPORT
-void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) CUI_FORMAT_FUNCTION(2, 3);
+CUI_EXPORT void CUILogLogToStderr(BOOL logToStderr);
+CUI_EXPORT void CUILogEnableRenditionLog(BOOL enabled);
+CUI_EXPORT BOOL CUILogRenditionLogEnabled(void);
 
-os_log_t _CUILogHandle(void);
+CUI_EXPORT void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) CUI_FORMAT_FUNCTION(2, 3);
 
 CUI_ASSUME_NONNULL_END
