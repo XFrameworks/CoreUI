@@ -81,6 +81,7 @@ void _CUILog(CUILogLevel level, const char * _Nonnull message, ...) {
                     os_log_with_type(_CUILogHandle(), OS_LOG_TYPE_ERROR, "%{public}@", result);
                     os_log_fault(_CUILogHandle(), "%{public}@", result);
                     CRSetCrashLogMessage(result.UTF8String);
+                    break;
                 default:
                     break;
             }
